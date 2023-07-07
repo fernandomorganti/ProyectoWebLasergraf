@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/*
+  @media screen and (min-width: 768px) {
+    .contenedor {
+      grid-template-columns: 1.5fr 1fr 1fr;
+      grid-template-rows: 3fr 0.2fr 1.8fr 1.8fr 0.6fr;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
+  } */
+
+.contenedor {
+    display: grid;
+    max-width: 100%;
+    height: 100%;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 3.5fr 0.5fr;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer"
+      ;
+  }
+
+  header {
+    grid-area: header;
+    background-color: black;
+  }
+   #logo{
+    text-align: center;
+   }
+
+  nav {
+    grid-area: nav;
+    background-color: rgb(73, 73, 73);
+  }
+
+  .botonera {
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+   .botonera li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    margin: 85px;
+}
+
+#color {
+  color: white;
+  font-size: 1.3rem;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  main {
+    display: flex;
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+
+  main aside {
+    width: 40%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .imagenHome {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+}
+  .imagenHome img {
+    width: 75%;
+    height: 100%;
+    border-radius: 200px;
+}
+
+  main section {
+    width: 60%;
+    background-color: black;
+    text-align: justify;
+    
+  }
+
+  #texto {
+    color: white;
+    font-size: 1.2rem;
+    padding: 50px;
+    margin-inline: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 180%;
+  }
+h1 {
+  font-size: 2rem;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 320%;
+}
+h2 {
+    font-size: 1rem;
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+h3 {
+  font-size: 1rem;
+  color:gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+#servicios {
+  display: flex;
+  background-color:black;
+  width: 100%;
+  height: 100%;
+}
+#servicios section {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+ }
+#servicios section img {
+ width: 200px;
+ height: 120px;
+}
+#servicios section p {
+ color: white;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 180%;
+ font-size: 1rem;
+ padding: 10px;
+ margin-inline: 35px;
+ }
+.contacto {
+  display: flex;
+  background-color: black;
+  width: 60%;
+  text-align: left;
+ }
+
+.mapa {
+  width: 40%;
+  background-color: black;
+  text-align: center;
+}
+.mapa img {
+
+}
+
+#datos p{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer { 
+    grid-area: footer;
+    background-color: red;
+  }
+
+  #comentarioPie {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+
+  #whatsapp {
+    margin-right: 20px;
+   
+  }
+  #whatsapp img{
+    width: 4%;
+    height: 4%;
+    float: right;
+
+  }
