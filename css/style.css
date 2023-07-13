@@ -17,6 +17,19 @@
     }
   }
 
+@media screen and (min-width: 1024px) {
+    .contenedor {
+      grid-template-columns: 1.5fr 1fr 1fr;
+      grid-template-rows: 1fr 0.2fr 3.5fr 0.5fr;
+      grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer"
+        ;
+    }
+  }
+
 .contenedor {
     display: grid;
     max-width: 100%;
@@ -174,8 +187,6 @@ h3 {
   width: 40%;
   background-color: black;
   text-align: center;
-}
-.mapa img {
 
 }
 
