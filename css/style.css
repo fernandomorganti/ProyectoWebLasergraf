@@ -6,13 +6,13 @@
 
   @media screen and (min-width: 768px) {
     .contenedor {
-      grid-template-columns: 1.5fr 1fr 1fr;
-      grid-template-rows: 3fr 0.2fr 1.8fr 1.8fr 0.6fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 0.2fr 3.5fr 0.5fr;
       grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer"
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer"
         ;
     }
   }
@@ -35,7 +35,17 @@
     grid-area: header;
     background-color: black;
   }
-   #logo{
+  .container-fluid{
+    height: 20vh;
+    background-color: black;
+    text-align: center;
+}
+
+main{
+    height: 55vh;
+    background-color: rgb(240, 12, 12);
+}
+  #logo{
     text-align: center;
    }
 
